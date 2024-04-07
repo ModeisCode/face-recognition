@@ -46,7 +46,7 @@ while True:
         res = face_recognition.compare_faces(imgs_encoded,face)
         if res[0] == True:
             cv2.rectangle(frame,(x,y),(w,h),(255,0,0),2)
-            cv2.putText(frame,"DOGUKAN",(x,h+35),cv2.FONT_HERSHEY_PLAIN,0.9,(200,0,0),2)
+            cv2.putText(frame,"ADMIN",(x,h+35),cv2.FONT_HERSHEY_PLAIN,0.9,(200,0,0),2)
         else:
             cv2.rectangle(frame,(x,y),(w,h),(255,0,0),2)
             cv2.putText(frame,"ANY",(x,h+35),cv2.FONT_HERSHEY_PLAIN,2,(255,0,0),2)
